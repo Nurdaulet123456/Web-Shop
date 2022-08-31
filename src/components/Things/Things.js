@@ -22,12 +22,9 @@ const Things = () => {
     if (initialFilterType.length === 0) {
       return categorys;
     }
-    // console.log(initialFilterType);
     for (let i = 0; i < initialFilterType.length; i++) {
       if (initialFilterType[i].isChecked) {
-        // console.log(categorys.filter(val => initialFilterType[i][val.filter] === "on"), initialFilterType[i]);
         obj.category = (categorys.filter(val => initialFilterType[i][val.filter] === "on"));
-        // return obj.category;
       }
     }
     return obj.category;
