@@ -1,0 +1,115 @@
+section {
+    padding-bottom: 2rem;
+}
+
+.items {
+    width: 100%;
+    display: flex;
+}
+
+/* Filters */
+
+.filters {
+    width: 25%;
+    padding-right: 2rem;
+    border-right: 1px solid var(--border-color);
+}
+
+.filters__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.filters__content {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filters__content {
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+  }
+  
+  .filters__content.collapsed {
+    max-height: 0;
+    transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+  }
+
+.filters__choose {
+    font-size: 1.4rem;
+}
+
+.filters__cancel {
+    font-size: 1.4rem;
+    color: rgb(181, 181, 181);
+    cursor: pointer;
+}
+
+
+/* Things */
+
+.things { 
+    width: 75%;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.things__content {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.things__title {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.things__filter {
+    margin-bottom: 0.5rem;
+}
+
+.things__price {
+    font-weight: 500;
+}
+
+
+
+input[type="text"] {
+    width: 100%;
+    background-color: transparent;
+    padding: .8rem 1.6rem;
+    border: 1px solid #DEDEDE;
+    border-radius: 4px;
+
+    margin-bottom: 2rem;
+    color: black;
+}
+
+input[type="text"]::placeholder {
+    color: #B4B4B4;
+}
+
+.filters__check {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 2.5rem;
+}
+
+.filters__check > input {
+    margin-right: 1.2rem;
+}
+
+input:focus {
+    outline: none;
+}
+
